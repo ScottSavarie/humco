@@ -85,7 +85,8 @@
 .overflow
   overflow: visible
 
-
+.txt-center
+  text-align: center
 
 dt
   font-weight: bold
@@ -124,4 +125,27 @@ dd
       position: absolute
       bottom: -33px
       z-index: 2
+
+
+.has-edge--last
+  @media only screen and (min-width: $second-break)
+    &:after
+      +background-image(url(../img/border-image-up.png))
+      content: ""
+      width: 100%
+      height: 80px
+      position: absolute
+      top: -33px
     
+
+
+
+.is-italic
+  font-family: 'adobe_caslon_proitalic', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+
+.is-brown
+  color: $c-brown
+
+
+
+
