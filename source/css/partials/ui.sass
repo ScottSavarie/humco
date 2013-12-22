@@ -1,0 +1,18 @@
+.social-list li
+  +inline-block
+  padding: $l-l $l-l
+  vertical-align: middle
+
+.social-list-link:link, .social-list-link:visited
+  +opacity(0.6)
+  +single-transition(all, 0.2s, ease-out)
+  &:hover
+    +opacity(1)
+
+
+
+.is-light-green, a.is-light-green
+  color: $c-lightgreen !important
+  +single-transition(all, 0.2s, ease-out)
+  &:hover
+    color: darken($c-lightgreen, 40%) !important

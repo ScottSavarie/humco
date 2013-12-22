@@ -14,7 +14,19 @@ description: "description"
     .logo-wrap
       %img{:src=>"img/humco-11.png", :alt=>"Humco Logo"}   
       %img{:src=>"img/humco-1.png", :alt=>"Handmade Archtop & Flat-top Guitars"}   
-    %img.img-full-width{:src=>"img/archtop-headstock.jpg", :alt=>"Archtop Guitar Headstock"}
+      %ul.social-list
+        %li
+          %a.social-list-link{:href=>""}
+            %img{:src=>"img/icon-mail.svg", :alt=>"Humco Mail Icon"} 
+        %li
+          %a.social-list-link{:href=>""}
+            %img{:src=>"img/icon-phone.svg", :alt=>"Humco Phone Icon"} 
+        %li
+          %a.social-list-link{:href=>""}
+            %img{:src=>"img/icon-fb.svg", :alt=>"Humco Facebook Icon"} 
+      %a.is-italic.is-light-green{:href=>""}
+        %span Visit my building log
+    %img#header-img.img-full-width{:src=>"img/archtop-headstock.jpg", :alt=>"Archtop Guitar Headstock"}
     = partial "navigation"
 
 %section.l-module--spaced.is-relative.has-edge.overflow
@@ -27,7 +39,7 @@ description: "description"
   .l-module.is-relative
     .type-wrap
       %img{:src=>"img/humco-8.png", :alt=>"Humco Models Type"}  
-    %img.img-full-width{:src=>"img/humco-13.jpg", :alt=>"Humco Guitar Models"}
+    %img#models-img.img-full-width{:src=>"img/humco-13.jpg", :alt=>"Humco Guitar Models"}
 
 
 %section.l-module--spaced.is-relative.has-edge.overflow
@@ -42,7 +54,7 @@ description: "description"
   .l-module.is-relative
     .type-wrap.ptidinger
       %img{:src=>"img/humco-7.png", :alt=>"Petit Dinger Logotype"}  
-    %img.img-full-width{:src=>"img/lilildingfront.jpg", :alt=>"Petit Dinger Guitar"}
+    %img#pti-img.img-full-width{:src=>"img/lilildingfront.jpg", :alt=>"Petit Dinger Guitar"}
 
 %section
   .l-module.is-relative
