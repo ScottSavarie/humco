@@ -30,7 +30,7 @@ description: "description"
       %img#header-img.img-full-width{:src=>"img/archtop-headstock.jpg", :alt=>"Archtop Guitar Headstock"}
     = partial "navigation"
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container--narrow
     %p
       When I began to make instruments,  I wondered if it were possible to make musical instruments that could 
@@ -43,7 +43,7 @@ description: "description"
     %img#models-img.img-full-width{:src=>"img/humco-13.jpg", :alt=>"Humco Guitar Models"}
 
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container--narrow
     %p
       Currently, four different body sizes are being offered, with the option of either a flat-top or carved archtop, for all my current body shapes and sizes. I don't discriminate. 
@@ -70,7 +70,7 @@ description: "description"
     %img#old-img.img-full-width{:src=>"img/dreadfront.jpg", :alt=>"Old Dinger Guitar"}
 
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container
     = partial "dinger-table"
 
@@ -82,16 +82,16 @@ description: "description"
   .l-module.is-relative
     .type-wrap
       %img{:src=>"img/humco-4.png", :alt=>"Introducing Logotype"}  
-    %img.img-full-width{:src=>"img/archy-one-side.jpeg", :alt=>"Archy Futura Guitar"}
+    %img#archy-img.img-full-width{:src=>"img/archy-one-side.jpeg", :alt=>"Archy Futura Guitar"}
 
 %section.l-module--spaced.is-relative.has-edge.overflow
   %article.l-container--narrow.txt-center
     %img{:src=>"img/humco-3.png", :alt=>"Archy Futura Logotype"} 
 
-%img.img-full-width{:src=>"img/archynew.jpg", :alt=>"Archy Futura Guitar"}
+%img#archy-two-img.img-full-width{:src=>"img/archynew.jpg", :alt=>"Archy Futura Guitar"}
 
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container--narrow
     %p
       Introducing a few years worth of inspiration, Archy Futura. Named after the art deco font, it represents
@@ -109,24 +109,24 @@ description: "description"
       The result is a less muffled voice with greater sustain & reasonance.  It’s a guitar that will make you look twice.
       If you're interested in finding out more on this design, please contact me. 
 
-%img.img-full-width{:src=>"img/archtop-back.jpg", :alt=>"Archy Futura Guitar Back"}
+%img#archy-three-img.img-full-width{:src=>"img/archtop-back.jpg", :alt=>"Archy Futura Guitar Back"}
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container--narrow
     %p
       All my archtop guitars have hand carved tops and backs. Everything from the bulk removal of material, to the final shaping, is done with a combination of hand planes, gouges, finger planes, cabinet scrapers, & sandpaper. This allows me the freedom to tune the tops and backs to relative nodes of one another, which makes the difference in a great sounding instrument. No pre-fabricated parts either - bridges, tailpieces, finger rests & inlays are made in house, by me. Necks are hand carved from scratch, and can be carved to any desired custom shape. I do the finishing, final setups and assembly too. Instruments remain under my careful supervision for a few months after first assembled, to allow breaking in. 
 
-%img.img-full-width{:src=>"img/archy-one-speed-shot.jpeg", :alt=>"Archy Futura Guitar Top"}
+%img#archy-four-img.img-full-width{:src=>"img/archy-one-speed-shot.jpeg", :alt=>"Archy Futura Guitar Top"}
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container
     = partial "archy-table"
 
-%img.img-full-width{:src=>"img/archtop-side.jpg", :alt=>"Archy Futura Guitar Side"}
+%img#archy-five-img.img-full-width{:src=>"img/archtop-side.jpg", :alt=>"Archy Futura Guitar Side"}
 
 
 
-%section.l-module--spaced.is-relative.has-edge.overflow
+%section.l-module--spaced.is-relative.has-edge.overflow.green-bg
   %article.l-container--narrow
     %p.is-brown
       In order to minimize environmental impact, all instruments can be built completely out of sustainably sourced wood, non-chemical glues and finishes.   Forestry Stewardship Council (FSC) approved materials are readily available from my suppliers, so please ask for them. I've also managed to use rosewoods, ebony, mahogany & other exotics from solid wood furniture, so ask about that too. This method of acquiring material is especially effective when the furniture is damaged and doesn't serve its purpose anymore. The fingerboards I’m using right now came from a solid ebony table my friend found on the side of the road!
@@ -147,10 +147,27 @@ description: "description"
       It wasn't until I built my first guitar that I realized how much room for improvement there was for guitar functionality. Each time I build, there is the inevitable trial of trying to make a better sounding instrument. This is what drives me to improve my process, my selection of material, and experiments in maximizing tone. All this to consider while staying true to traditional building principles.
 
 
-%img.img-full-width{:src=>"img/dread-side.jpg", :alt=>"Dread Guitar Side"}
+
+%section.l-module.royalWrap
+  #royal-slider-full.royalSlider.rsDefault
+    %div
+      %p.swipe-text swipe for more images
+      %img.img-full-width.rsImg{:src=>"img/dread-side.jpg", :alt=>"Dread Guitar Side"}
+    %img.img-full-width.rsImg{:src=>"img/archtop-front-tree.jpg", :alt=>"Archtop Front tree"}
+    %img.img-full-width.rsImg{:src=>"img/archtop-speed-shot.jpg", :alt=>"Archtop Speed Shot"}
+    %img.img-full-width.rsImg{:src=>"img/archy-one-front.jpeg", :alt=>"Archy One Front"}
+    %img.img-full-width.rsImg{:src=>"img/dreadhead.jpg", :alt=>"Dread Guitar Head"}
+    %img.img-full-width.rsImg{:src=>"img/parlorfront.jpg", :alt=>"Parlor Guitar"}
+    %img.img-full-width.rsImg{:src=>"img/parlorhead.jpg", :alt=>"Parlor Head"}
+    %img.img-full-width.rsImg{:src=>"img/z_carved 3 inside.jpg", :alt=>"Work in progress"}
+    %img.img-full-width.rsImg{:src=>"img/z_Carved2.jpg", :alt=>"Work in progress"}
+    %img.img-full-width.rsImg{:src=>"img/z_carving0.jpg", :alt=>"Work in progress"}
+    
 
 
-%section.l-module--spaced.is-relative.has-edge--last.overflow
+
+
+%section.l-module--spaced.is-relative.has-edge--last.overflow.green-bg
   %article.l-container--narrow
     %p.is-brown
       All commissioned work will be performed by me, master chef Matt Maranger. All commissions are subject to unique timelines - current turnaround is 8 months to a year, depending on availability of materials and existing schedule. 

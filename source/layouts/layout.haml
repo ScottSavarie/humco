@@ -16,6 +16,8 @@
     %meta{:content => "yes", :name => "apple-touch-fullscreen"}
     / Place favicon.ico and apple-touch-icon.png in the root directory
     %link{:href => "css/style.css", :rel => "stylesheet"}
+    %link{:href => "royalslider/royalslider.css", :rel => "stylesheet"}
+    %link{:href => "royalslider/skins/default/rs-default.css", :rel => "stylesheet"}
     %link{:href => "http://fonts.googleapis.com/css?family=Cardo:400,400italic,700", :rel => "stylesheet"}
 
   %body(class="#{@body_class.presence}")
@@ -23,8 +25,8 @@
     = partial "footer"
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
     %script{:src => "js/modules/respond.min.js"}
+    %script{:src => "royalslider/jquery.royalslider.custom.min.js"}
     %script{:src => "js/main.js"}
-
 
     :javascript
       var _gaq=[['_setAccount','UA-17675383-2'],['_trackPageview']];

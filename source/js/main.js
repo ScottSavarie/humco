@@ -76,26 +76,27 @@ $(window).scroll(function(event) {
     }
 
     else {
-
-    // $(".humco-type").css({opacity : 1});
-    // $(".nav-links").css({opacity : 1});      
+    
       
     }
 });
 
 
-// $(window).resize(function() {
-    
-//     if (window.innerWidth <= 766){
-
-//     $(".humco-type").css({opacity : 1});
-//     $(".nav-links").css({opacity : 1});   
-
-//   }
-  
-// });
+/* =Royal Slider
+============================================================================== */
 
 
+    $(document).ready(function($) {
+        $(".royalSlider").royalSlider({
+        controlsInside: false,
+        slideSpacing: 0,
+        autoScaleSliderHeight: 450,
+        autoScaleSlider: true,
+        imageScaleMode: 'fill',
+        keyboardNavEnabled: true,
+        numImagesToPreload: 1
+        });  
+    });
 
 
 
@@ -220,7 +221,6 @@ $(window).scroll(function(event) {
     $("#old-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, old, old + 1000, 0, 400) + "px" + ", 0" + ")"});
     $("#old-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, old, old + 1000, 0, 400) + "px" + ", 0" + ")"});
 
-
     }
 
     else {
@@ -230,6 +230,110 @@ $(window).scroll(function(event) {
 
 
 
+var archy = $("#archy-img").offset().top;
+
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
+
+  if (window.innerWidth >= 769 && scrollTop <= archy + 1000){
+
+    $("#archy-img").css({transform : "translate3d" + "(0, " + map_range(scrollTop, archy, archy + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-img").css({Moztransform : "translate3d" + "(0, " + map_range(scrollTop, archy, archy + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-img").css({Webkittransform : "translate3d" + "(0, " + map_range(scrollTop, archy, archy + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, archy, archy + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, archy, archy + 1000, 0, 400) + "px" + ", 0" + ")"});
+    
+    }
+
+    else {
+      
+    }
+});
+
+
+
+var archytwo = $("#archy-two-img").offset().top;
+
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
+
+  if (window.innerWidth >= 769 && scrollTop <= archytwo + 1000){
+
+    $("#archy-two-img").css({transform : "translate3d" + "(0, " + map_range(scrollTop, archytwo, archytwo + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-two-img").css({Moztransform : "translate3d" + "(0, " + map_range(scrollTop, archytwo, archytwo + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-two-img").css({Webkittransform : "translate3d" + "(0, " + map_range(scrollTop, archytwo, archytwo + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-two-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, archytwo, archytwo + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-two-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, archytwo, archytwo + 1000, 0, 400) + "px" + ", 0" + ")"});
+    
+    }
+
+    else {
+      
+    }
+});
+
+
+var archythree = $("#archy-three-img").offset().top;
+
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
+
+  if (window.innerWidth >= 769 && scrollTop <= archythree + 1000){
+
+    $("#archy-three-img").css({transform : "translate3d" + "(0, " + map_range(scrollTop, archythree, archythree + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-three-img").css({Moztransform : "translate3d" + "(0, " + map_range(scrollTop, archythree, archythree + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-three-img").css({Webkittransform : "translate3d" + "(0, " + map_range(scrollTop, archythree, archythree + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-three-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, archythree, archythree + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-three-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, archythree, archythree + 1000, 0, 400) + "px" + ", 0" + ")"});
+    
+    }
+
+    else {
+      
+    }
+});
+
+
+var archyfour = $("#archy-four-img").offset().top;
+
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
+
+  if (window.innerWidth >= 769 && scrollTop <= archyfour + 1000){
+
+    $("#archy-four-img").css({transform : "translate3d" + "(0, " + map_range(scrollTop, archyfour, archyfour + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-four-img").css({Moztransform : "translate3d" + "(0, " + map_range(scrollTop, archyfour, archyfour + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-four-img").css({Webkittransform : "translate3d" + "(0, " + map_range(scrollTop, archyfour, archyfour + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-four-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, archyfour, archyfour + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-four-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, archyfour, archyfour + 1000, 0, 400) + "px" + ", 0" + ")"});
+    
+    }
+
+    else {
+      
+    }
+});
+
+
+var archyfive = $("#archy-five-img").offset().top;
+
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
+
+  if (window.innerWidth >= 769 && scrollTop <= archyfive + 1000){
+
+    $("#archy-five-img").css({transform : "translate3d" + "(0, " + map_range(scrollTop, archyfive, archyfive + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-five-img").css({Moztransform : "translate3d" + "(0, " + map_range(scrollTop, archyfive, archyfive + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-five-img").css({Webkittransform : "translate3d" + "(0, " + map_range(scrollTop, archyfive, archyfive + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-five-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, archyfive, archyfive + 1000, 0, 400) + "px" + ", 0" + ")"});
+    $("#archy-five-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, archyfive, archyfive + 1000, 0, 400) + "px" + ", 0" + ")"});
+    
+    }
+
+    else {
+      
+    }
+});
 
 
 
