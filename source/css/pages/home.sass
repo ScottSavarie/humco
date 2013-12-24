@@ -3,21 +3,35 @@
 
 .logo-wrap
   position: relative
-  top: 6em
+  top: 0em
   width: 90%
   margin: 0 auto
   max-width: 400px
   height: 0
   text-align: center
   z-index: 2
+  +opacity(0)
+  @media only screen and (min-width: $first-break)
+    top: 8em
   @media only screen and (min-width: $second-break)
     height: auto
     position: absolute
     top: auto
-    bottom: 2em
     left: 10%
     bottom: 10%
     width: 100%
+
+
+
+.logo-wrap-slide
+  +transition-property(opacity, bottom, top)
+  +transition-duration(1s)
+  +transition-timing-function(ease-out)
+  +transition-delay(0.5s)
+  +opacity(1)
+  @media only screen and (min-width: $second-break)
+    bottom: 12%
+
 
 
 
@@ -33,3 +47,15 @@
     top: 4em
     width: 100%
 
+
+.img-header-wrap
+  background: #000
+
+#header-img
+  +opacity(0.5)
+  @media only screen and (min-width: $second-break)
+    +opacity(1)
+
+
+
+// .no-js
