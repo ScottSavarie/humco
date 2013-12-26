@@ -1,0 +1,1 @@
+(function(e){e.extend(e.rsProto,{_initGlobalCaption:function(){var t=this;if(t.st.globalCaption){t.ev.on("rsAfterInit",function(){t.globalCaption=e('<div class="rsGCaption"></div>').appendTo(t.slider),n()}),t.ev.on("rsBeforeAnimStart",function(){n()});function n(){t.globalCaption.html(t.currSlide.caption)}}}}),e.rsModules.globalCaption=e.rsProto._initGlobalCaption})(jQuery);

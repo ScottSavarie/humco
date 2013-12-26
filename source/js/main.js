@@ -9,6 +9,10 @@ if(!Modernizr.svg) {
 }
 
 
+console.log($("#pti-img").height());
+console.log($("#pti-img").offset().top);
+
+
 /* =Map Range Function
 ============================================================================== */
 
@@ -113,9 +117,10 @@ $(window).scroll(function(event) {
 
 
 
+$(window).load(function(){
 
+  var header = $("#header-img").offset().top;
 
-var header = $("#header-img").offset().top;
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -135,9 +140,12 @@ $(window).scroll(function(event) {
     }
 });
 
+});
 
 
-var models = $("#models-img").offset().top;
+$(window).load(function(){
+  var models = $("#models-img").offset().top;
+
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -158,9 +166,14 @@ $(window).scroll(function(event) {
     }
 });
 
+});
 
 
-var pti = $("#pti-img").offset().top;
+
+$(window).load(function(){
+
+  var pti = $("#pti-img").offset().top;
+
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -180,12 +193,13 @@ $(window).scroll(function(event) {
       
     }
 });
+});
 
 
 
+$(window).load(function(){
+  var lil = $("#lil-img").offset().top;
 
-
-var lil = $("#lil-img").offset().top;
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -206,9 +220,12 @@ $(window).scroll(function(event) {
     }
 });
 
+});
 
 
-var old = $("#old-img").offset().top;
+$(window).load(function(){
+  var old = $("#old-img").offset().top;
+
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -228,9 +245,14 @@ $(window).scroll(function(event) {
     }
 });
 
+});
 
 
-var archy = $("#archy-img").offset().top;
+
+$(window).load(function(){
+  var archy = $("#archy-img").offset().top;
+
+
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -249,10 +271,11 @@ $(window).scroll(function(event) {
       
     }
 });
+});
 
+$(window).load(function(){
+  var archytwo = $("#archy-two-img").offset().top;
 
-
-var archytwo = $("#archy-two-img").offset().top;
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -271,9 +294,12 @@ $(window).scroll(function(event) {
       
     }
 });
+});
 
 
-var archythree = $("#archy-three-img").offset().top;
+$(window).load(function(){
+  var archythree = $("#archy-three-img").offset().top;
+
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -292,9 +318,12 @@ $(window).scroll(function(event) {
       
     }
 });
+});
 
 
-var archyfour = $("#archy-four-img").offset().top;
+$(window).load(function(){
+  var archyfour = $("#archy-four-img").offset().top;
+
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -313,9 +342,11 @@ $(window).scroll(function(event) {
       
     }
 });
+});
 
+$(window).load(function(){
+  var archyfive = $("#archy-five-img").offset().top;
 
-var archyfive = $("#archy-five-img").offset().top;
 
 $(window).scroll(function(event) {
   var scrollTop = $(document).scrollTop();
@@ -333,6 +364,7 @@ $(window).scroll(function(event) {
     else {
       
     }
+});
 });
 
 

@@ -1,0 +1,11 @@
+.l-container--narrow
+  %form{ :novalidate => "", :method => "post", :action => "contact-form-handler.php", :id => "contact-form", "data-validate" => "parsley", "data-error-container"=>"#contactform-errors"}
+    %fieldset
+      %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Your full name", :required => "required", "data-error-message" =>"We need your name!"}
+      %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Your email address", :required => "required", "data-error-message" =>"Hey, what's with your email?"}
+      %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Your phone number"}
+      %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Your message…", :required => "required", "data-error-message" =>"You gotta tell us something!"}
+      %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
+
+  .contact-details-container 
+    #contactform-errors   
