@@ -9,10 +9,6 @@ if(!Modernizr.svg) {
 }
 
 
-console.log($("#pti-img").height());
-console.log($("#pti-img").offset().top);
-
-
 /* =Map Range Function
 ============================================================================== */
 
@@ -369,9 +365,27 @@ $(window).scroll(function(event) {
 
 
 
+$(window).load(function(){
+  var artImg = $("#art-img").offset().top;
 
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
 
+  if (window.innerWidth >= 769 && scrollTop <= artImg + 1000){
 
+    $("#art-img").css({transform : "translate3d" + "(0, " + map_range(scrollTop, artImg, artImg + 200, 0, 400) + "px" + ", 0" + ")"});
+    $("#art-img").css({Moztransform : "translate3d" + "(0, " + map_range(scrollTop, artImg, artImg + 200, 0, 400) + "px" + ", 0" + ")"});
+    $("#art-img").css({Webkittransform : "translate3d" + "(0, " + map_range(scrollTop, artImg, artImg + 200, 0, 400) + "px" + ", 0" + ")"});
+    $("#art-img").css({mstransform : "translate3d" + "(0, " + map_range(scrollTop, artImg, artImg + 200, 0, 400) + "px" + ", 0" + ")"});
+    $("#art-img").css({Otransform : "translate3d" + "(0, " + map_range(scrollTop, artImg, artImg + 200, 0, 400) + "px" + ", 0" + ")"});
+    
+    }
+
+    else {
+      
+    }
+});
+});
 
 
 

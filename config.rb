@@ -22,9 +22,10 @@ page "styleguide.html", :layout => false
 page "/sitemap.xml", :layout => false
 page "/sitemap.html", :layout => false
 
+
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+page "warranty.html", :layout => "layoutwarranty"
 #
 # A path which all have the same layout
 # with_layout :admin do

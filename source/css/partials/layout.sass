@@ -40,6 +40,10 @@
   @extend .l-container--wide
   max-width: 800px  
 
+.l-container--mid
+  @extend .l-container--wide
+  max-width: 1000px  
+
 .l-container--list
   @extend %l-container
   width: 95% 
@@ -54,7 +58,7 @@
 .two-thirds
   width: 100%
   @media only screen and (min-width: $second-break)
-    width: 60%
+    width: 55%
 
 .one-third
   width: 100%
@@ -71,9 +75,11 @@
 
 .fl
   float: left
+  // padding: 0 2.5%
 
 .fr
   float: right
+  // padding: 0 2.5%
 
 .is-relative
   position: relative
